@@ -1,0 +1,25 @@
+.hidden {
+	display: none;
+}
+
+.wrapper {
+	border: 2px solid black;
+	margin: 0 auto;
+	max-width: 400px;
+	display: grid;
+	grid-template-columns: 60px 60px 60px 60px;
+	grid-template-rows: 60px 1090px 90px;
+	grid-column-gap: 30px;
+}
+
+.mainHeader {
+	background-color: #63AEAA;
+}
+
+.siteContent {
+
+}
+
+.mainFooter {
+	background-color: #63AEAA;
+}
