@@ -108,6 +108,7 @@ a {
 	grid-row: 2/3;
 	display: flex;
 	flex-direction: column;
+	align-items: center;
 }
 
 .mainFooter {
@@ -133,4 +134,41 @@ a {
 
 .socialMedia a {
 	padding-top: 6px;
+}
+
+/* About Page */
+
+.aboutContent {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.aboutImage {
+	margin-top: 2em;
+	width: 330px;
+	height: auto;
+	border-radius: 1em;
+}
+
+.aboutMessageTitle {
+	margin-top: 0.5em;
+	font-weight: 600;
+	color: #63AEAA;
+	font-size: 2em;
+	max-width: 380px;
+	text-align: center;
+}
+
+.aboutMessage {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+	font-size: 2em;
+	color: #63AEAA;
+	max-width: 330px;
+	text-align: center;
+}
+
+.divider img {
+	width: 360px;
 }
