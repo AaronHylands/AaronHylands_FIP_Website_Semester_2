@@ -65,8 +65,6 @@ a {
 	align-self: center;
 }
 
-
-
 .hidden {
 	display: none;
 }
@@ -105,16 +103,6 @@ a {
 	align-self: flex-end;
 }
 
-.mainFooter {
-	background-color: #63AEAA;
-	grid-column: 1/10;
-	grid-row: 3/4
-}
-
-.opened {
-	animation: openSaysMe 0.2s linear;
-}
-
 .siteContent {
 	grid-column: 1/10;
 	grid-row: 2/3;
@@ -122,6 +110,27 @@ a {
 	flex-direction: column;
 }
 
-@keyframes openSaysMe {
-	100% { transform: rotate(90deg); }
+.mainFooter {
+	background-color: #63AEAA;
+	grid-column: 1/10;
+	grid-row: 3/4;
+
+	display: flex;
+	justify-content: space-around;
+}
+
+.socialMedia {
+	width: 330px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.socialMedia img {
+	width: 60px;
+	height: 60px;
+}
+
+.socialMedia a {
+	padding-top: 6px;
 }
