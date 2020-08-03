@@ -1,0 +1,12 @@
+<svg id="navHamburger" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40">
+  <title>hamburgerExit</title>
+  <g id="navBackground">
+    <rect width="40" height="40" rx="3.01" style="fill: #63aeaa"/>
+  </g>
+  <g id="bottomLine">
+    <line x1="2.11" y1="5" x2="37.37" y2="35" style="fill: none;stroke: snow;stroke-linecap: round;stroke-miterlimit: 10;stroke-width: 2px"/>
+  </g>
+  <g id="topLine">
+    <line x1="1.59" y1="35" x2="37.89" y2="5" style="fill: none;stroke: snow;stroke-linecap: round;stroke-miterlimit: 10;stroke-width: 2px"/>
+  </g>
+</svg>
