@@ -1,0 +1,7 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60">
+  <title>facebookIcon</title>
+  <g>
+    <path d="M60,45A15,15,0,0,1,45,60H15A15,15,0,0,1,0,45V15A15,15,0,0,1,15,0H45A15,15,0,0,1,60,15V45Z" style="fill: #235b9e"/>
+    <path d="M25,48.73h7.49V30h5.58l.67-7.48h-6v-3a1.58,1.58,0,0,1,1.65-1.8h4.19V11.27l-5.8,0c-6.44,0-7.9,4.79-7.9,7.86V22.5H21.22V30H25C25,38.48,25,48.73,25,48.73Z" style="fill: #fff"/>
+  </g>
+</svg>
