@@ -184,3 +184,16 @@ a {
 .divider img {
 	width: 360px;
 }
+
+/* Gallery Page */
+
+.galleryImage {
+	padding-top: 2em;
+
+}
+
+.galleryImage img {
+	max-width: 330px;
+	border-radius: 1em;
+	box-shadow: 2px 1px 8px darkgrey;
+}
