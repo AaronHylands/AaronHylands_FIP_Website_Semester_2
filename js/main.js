@@ -4,6 +4,7 @@
   let burgerButton = document.querySelector("#burgerButton"),
       burgerButtonExit = document.querySelector("#burgerButtonExit"),
       returnTop = document.querySelector("#returnTop"),
+      dividers = document.querySelectorAll(".divider"),
       mainNav = document.querySelector("#mainNav");
 
   function toggleNav() {
@@ -18,12 +19,18 @@
   }
 
   function beamMeUpScotty() {
-    window.scrollTo(0, 0);
+    window.scroll({ top: 0, behavior: 'smooth' })
 
+  }
+
+  function scrollDown() {
+    window.scrollBy({ top: 800, behavior: 'smooth' });
   }
 
   burgerButton.addEventListener("click", toggleNav);
   burgerButtonExit.addEventListener("click", toggleNav);
 
   returnTop.addEventListener("click", beamMeUpScotty);
+
+  dividers.forEach(divider => divider.addEventListener("click", scrollDown));
 })();
