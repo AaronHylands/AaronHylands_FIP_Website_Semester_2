@@ -3,6 +3,7 @@
 
   let burgerButton = document.querySelector("#burgerButton"),
       burgerButtonExit = document.querySelector("#burgerButtonExit"),
+      returnTop = document.querySelector("#returnTop"),
       mainNav = document.querySelector("#mainNav");
 
   function toggleNav() {
@@ -16,6 +17,13 @@
     }
   }
 
+  function beamMeUpScotty() {
+    window.scrollTo(0, 0);
+
+  }
+
   burgerButton.addEventListener("click", toggleNav);
   burgerButtonExit.addEventListener("click", toggleNav);
+
+  returnTop.addEventListener("click", beamMeUpScotty);
 })();

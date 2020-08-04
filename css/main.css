@@ -65,6 +65,13 @@ a {
 	align-self: center;
 }
 
+#returnTop {
+	grid-column: 8/9;
+	grid-row: 3/4;
+	background: none;
+	border: none;
+}
+
 .hidden {
 	display: none;
 }
@@ -74,7 +81,7 @@ a {
 	max-width: 400px;
 	display: grid;
 	grid-template-columns: 35px 60px 30px 60px 30px 60px 30px 60px 35px;
-	grid-template-rows: 60px auto 90px;
+	grid-template-rows: 60px auto 60px 90px;
 
 }
 
@@ -114,7 +121,7 @@ a {
 .mainFooter {
 	background-color: #63AEAA;
 	grid-column: 1/10;
-	grid-row: 3/4;
+	grid-row: 4/5;
 
 	display: flex;
 	justify-content: space-around;
@@ -130,10 +137,15 @@ a {
 .socialMedia img {
 	width: 60px;
 	height: 60px;
+	padding-top: 6px;
+	padding-left: 7.5px;
+	padding-right: 7.5px;
 }
 
 .socialMedia a {
 	padding-top: 6px;
+	padding-left: 7.5px;
+	padding-right: 7.5px;
 }
 
 /* About Page */
