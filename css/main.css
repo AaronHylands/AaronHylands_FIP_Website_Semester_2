@@ -23,6 +23,10 @@ a {
 	padding-top: 0.75em;
 }
 
+#mainNav li a:hover {
+	color: #F7EA46;
+}
+
 #mainNav li:first-child {
 	padding-top: 0.25em;
 }
@@ -204,12 +208,13 @@ a {
 	max-width: 330px;
 	border-radius: 1em;
 	box-shadow: 2px 1px 8px darkgrey;
+	overflow: none;
 }
 
 .galleryDetails{
 	box-shadow: 2px 1px 8px darkgrey;
 	width: 330px;
-	max-height: 199px;
+	max-height: 198px;
 	height: 200px;
 	text-align: center;
 	font-size: 2em;
