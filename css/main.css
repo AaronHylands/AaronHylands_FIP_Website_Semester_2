@@ -69,9 +69,9 @@ a {
 	align-self: center;
 }
 
-#returnTop {
+.returnTop {
 	grid-column: 8/9;
-	grid-row: 13/14;
+	grid-row: 3/4;
 	background: none;
 	border: none;
 }
@@ -125,7 +125,7 @@ a {
 .mainFooter {
 	background-color: #63AEAA;
 	grid-column: 1/10;
-	grid-row: 14/15;
+	grid-row: 4/5;
 
 	display: flex;
 	justify-content: space-around;
@@ -183,6 +183,7 @@ a {
 	color: #63AEAA;
 	max-width: 330px;
 	text-align: center;
+	line-height: 1.2em;
 }
 
 .divider img {
@@ -190,6 +191,13 @@ a {
 }
 
 /* Gallery Page */
+
+.returnTopGallery {
+	grid-column: 8/9;
+	grid-row: 13/14;
+	background: none;
+	border: none;
+}
 
 .galleryWrapper {
 	margin: 0 auto;
@@ -200,6 +208,15 @@ a {
 
 }
 
+.mainFooterGallery {
+	background-color: #63AEAA;
+	grid-column: 1/10;
+	grid-row: 14/15;
+
+	display: flex;
+	justify-content: space-around;
+}
+
 .galleryImage {
 	z-index: 1;
 }
@@ -208,7 +225,6 @@ a {
 	max-width: 330px;
 	border-radius: 1em;
 	box-shadow: 2px 1px 8px darkgrey;
-	overflow: none;
 }
 
 .galleryDetails{
@@ -293,3 +309,62 @@ a {
 	100% {opacity:1;}
 	/*100% {transform: rotate(-180deg)}*/
 }
+
+/* Store Page */
+
+.myStoreWrapper {
+	margin: 0 auto;
+	max-width: 400px;
+	display: grid;
+	grid-template-columns: 35px 60px 30px 60px 30px 60px 30px 60px 35px;
+	grid-template-rows: 60px auto 50px auto 75px auto 75px auto 75px auto 60px 90px;
+
+}
+
+.returnTopStore {
+	grid-column: 8/9;
+	grid-row: 11/12;
+	background: none;
+	border: none;
+}
+
+.mainStoreFooter {
+	background-color: #63AEAA;
+	grid-column: 1/10;
+	grid-row: 12/13;
+
+	display: flex;
+	justify-content: space-around;
+}
+
+#shoppingCart {
+	grid-column: 2/3;
+	grid-row: 1/2;
+	z-index: 5;
+	background: none;
+	border: none;
+}
+
+#shoppingTitle {
+	margin-top: 1em;
+	font-weight: 600;
+	color: #63AEAA;
+	font-size: 2em;
+	max-width: 380px;
+	text-align: center;
+	text-shadow: 1px 1px 8px lightgrey;
+}
+
+#shoppingMessage {
+	margin-top: 0.5em;
+	margin-bottom: 1em;
+	color: #63AEAA;
+	font-size: 2em;
+	text-align: center;
+	width: 330px;
+	align-self: center;
+ text-shadow: 1px 1px 8px lightgrey;
+ line-height: 1.2em;
+}
+
+/* Shopping Items */

@@ -26,7 +26,7 @@
   }
 
   function scrollDown() {
-    window.scrollBy({ top: 800, behavior: 'smooth' });
+    window.scrollBy({ top: 900, behavior: 'smooth' });
   }
 
   function animateImage() {
