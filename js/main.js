@@ -51,6 +51,9 @@
 
   function addItemToCart() {
     debugger;
+    let addItem = document.querySelector(`img[data-key="${this.dataset.key}"]`);
+
+    cartContainer.appendChild(addItem);
   }
 
   addToCart.forEach(addButton => addButton.addEventListener("click", addItemToCart));
