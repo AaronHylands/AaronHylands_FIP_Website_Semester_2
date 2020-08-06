@@ -20,7 +20,7 @@
   }
 
   function beamMeUpScotty() {
-    window.scroll({ top: 0, behavior: 'smooth' })
+    window.scroll({ top: 0, behavior: 'smooth' });
 
   }
 
@@ -38,7 +38,6 @@
     //debugger;
     this.classList.remove("galleryItemAnimate");
     let matches = document.querySelectorAll(`div[data-key="${this.dataset.key}"]`);
-
     matches.forEach(match => match.classList.toggle("hidden"));
 
 
@@ -50,15 +49,22 @@
   }
 
   function addItemToCart() {
-    debugger;
+    //debugger;
     let addItem = document.querySelector(`img[data-key="${this.dataset.key}"]`);
 
-    cartContainer.appendChild(addItem);
+    let newCartItem = document.createElement("li");
+
+    newCartItem.className = "cartItem"
+    newCartItem.appendChild(addItem);
+
+    cartContainer.appendChild(newCartItem);
+
+
   }
 
   addToCart.forEach(addButton => addButton.addEventListener("click", addItemToCart));
 
-  cartButton.addEventListener("click", toggleShoppingCart);
+
 
   burgerButton.addEventListener("click", toggleNav);
   burgerButtonExit.addEventListener("click", toggleNav);
@@ -76,4 +82,6 @@
   galleryDetails.forEach(galleryDetail => galleryDetail.addEventListener("animationend", flipImage));
   storeItems.forEach(storeItem => storeItem.addEventListener("animationend", flipImage));
   storeDetails.forEach(storeDetail => storeDetail.addEventListener("animationend", flipImage));
+
+  cartButton.addEventListener("click", toggleShoppingCart);
 })();

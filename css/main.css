@@ -433,6 +433,9 @@ a {
 
 /* Store Items End */
 
+.cartItem img {
+	max-width: 60px;
+}
 
 .cartContainer {
 	position: absolute;
