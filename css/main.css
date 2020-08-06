@@ -430,3 +430,27 @@ a {
 	grid-column: 2/9;
 	grid-row: 10/11;
 }
+
+/* Store Items End */
+
+
+.cartContainer {
+	position: absolute;
+	width: 330px;
+	min-height: 200px;
+	background-color: #63AEAA;
+	border-radius: 1em;
+	margin-left: 35px;
+	margin-top: 60px;
+	box-shadow: 1px 1px 8px darkgrey;
+	border: 3px solid #FFFAFA;
+}
+
+.shoppingCartOpen {
+	animation: shoppingCartOpen 1s ease-out;
+}
+
+@keyframes shoppingCartOpen {
+	0% {top: -1133px;}
+	100% {top: -643px;}
+}

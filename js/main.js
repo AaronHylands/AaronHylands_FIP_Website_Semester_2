@@ -9,17 +9,14 @@
       galleryDetails = document.querySelectorAll(".galleryDetails"),
       storeItems = document.querySelectorAll(".storeItem"),
       storeDetails = document.querySelectorAll(".storeDetail"),
+      cartButton = document.querySelector("#shoppingCart"),
+      cartContainer = document.querySelector(".cartContainer"),
+      addToCart = document.querySelectorAll(".addToCart"),
       mainNav = document.querySelector("#mainNav");
 
   function toggleNav() {
-    if (mainNav.classList.contains("hidden")) {
-    mainNav.classList.remove("hidden");
-    burgerButtonExit.classList.remove("hidden");
-  }
-    else {
-      mainNav.classList.add("hidden");
-      burgerButtonExit.classList.add("hidden");
-    }
+    mainNav.classList.toggle("hidden");
+    burgerButtonExit.classList.toggle("hidden");
   }
 
   function beamMeUpScotty() {
@@ -34,8 +31,6 @@
   function animateImage() {
     this.classList.add("galleryItemAnimate");
 
-
-
   }
 
   function flipImage() {
@@ -49,6 +44,18 @@
 
     //galleryItem1.classList.toggle("hidden");
   }
+
+  function toggleShoppingCart() {
+    cartContainer.classList.toggle("hidden");
+  }
+
+  function addItemToCart() {
+    debugger;
+  }
+
+  addToCart.forEach(addButton => addButton.addEventListener("click", addItemToCart));
+
+  cartButton.addEventListener("click", toggleShoppingCart);
 
   burgerButton.addEventListener("click", toggleNav);
   burgerButtonExit.addEventListener("click", toggleNav);
