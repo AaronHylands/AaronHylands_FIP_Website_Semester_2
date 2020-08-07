@@ -338,7 +338,7 @@ a {
 	justify-content: space-around;
 }
 
-#shoppingCart {
+.shoppingCart {
 	grid-column: 2/3;
 	grid-row: 1/2;
 	z-index: 5;
@@ -408,6 +408,7 @@ a {
 	color: #63AEAA;
 }
 
+
 /* Store Items */
 
 
@@ -434,13 +435,17 @@ a {
 /* Store Items End */
 
 .cartItem img {
-	max-width: 60px;
+	max-width: 80px;
+	max-height: 80px;
+	margin: 5px;
+	border-radius: 0.5em;
+	border: 2px solid #FFFAFA;
 }
 
 .cartContainer {
 	position: absolute;
 	width: 324px;
-	min-height: 200px;
+	min-height: 100px;
 	background-color: #63AEAA;
 	border-radius: 1em;
 	margin-left: 35px;
@@ -449,9 +454,60 @@ a {
 	border: 3px solid #FFFAFA;
 }
 
+.flex {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+
+}
+
+.checkoutButton	{
+	color: #63AEAA;
+	margin-top: 5px;
+	margin-left: 10px;
+	font-size: 1.2em;
+	width: 100px;
+	height: 40px;
+	border-radius: 0.5em;
+	border: none;
+	background-color: #FFFAFA;
+	align-self: flex-start;
+}
+
 .shoppingCartOpen {
 	animation: shoppingCartOpen 1s ease-out;
 }
+
+.cartItemEdit {
+	height: 80px;
+	width: 80px;
+	margin: 5px;
+	border: 2px solid #FFFAFA;
+	border-radius: 0.7em;
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+	flex-wrap: wrap;
+	color: #FFFAFA;
+}
+
+.cartItemRemove {
+	margin-top: 0.5em;
+	font-size: 1em;
+}
+
+.yes {
+	padding-right: 0.5em;
+}
+
+.yes:hover {
+  color: #F7EA46;
+}
+
+.no:hover {
+  color: #F7EA46;
+}
+
 
 @keyframes shoppingCartOpen {
 	0% {top: -1133px;}
