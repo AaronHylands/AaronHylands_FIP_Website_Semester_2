@@ -580,5 +580,76 @@ a {
 }
 
 #sendMessage {
-	
+	margin-top: 1em;
+	width: 150px;
+	height: 60px;
+	border-radius: 0.5em;
+	font-size: 1.4em;
+	color: #FFFAFA;
+	background-color: #63AEAA;
+	border: none;
+}
+
+/* MEDIA QUERIES - TABLET 760px */
+
+@media screen and (min-width:50em) {
+	.myWrapper {
+		margin: 0 auto;
+		max-width: 400px;
+		display: grid;
+		grid-template-columns: 35px 60px 30px 60px 30px 60px 30px 60px /**/ 30px /**/ 60px 30px 60px 30px 60px 30px 60px 35px;
+		grid-template-rows: 60px auto 60px 90px;
+
+	}
+
+	.mainHeader {
+		z-index: 2;
+		background-color: #63AEAA;
+		grid-column: 1/18;
+		grid-row: 1/2;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.siteContent {
+	grid-column: 1/18;
+	grid-row: 2/3;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	}
+
+	.mainFooter {
+		background-color: #63AEAA;
+		grid-column: 1/18;
+		grid-row: 4/5;
+
+		display: flex;
+		justify-content: space-around;
+	}
+
+	#burgerButton {
+		grid-column: 16/17;
+		grid-row: 1/2;
+		background-color: #63AEAA;
+		border: none;
+		z-index: 3;
+	}
+
+	#burgerButtonExit {
+		grid-column: 16/17;
+		grid-row: 1/2;
+		background-color: #63AEAA;
+		border: none;
+		z-index: 4;
+	}
+
+	.returnTop {
+		grid-column: 16/17;
+		grid-row: 3/4;
+		background: none;
+		border: none;
+	}
+
 }
