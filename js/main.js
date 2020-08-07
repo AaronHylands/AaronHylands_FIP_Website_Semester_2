@@ -84,10 +84,10 @@
 
   function cartItemFunction() {
     //console.log(`${this.dataset.key}`)
-    let   cartEdit = document.querySelector(`li[data-key="${this.dataset.key}"]`);
+    let  cartEdit = document.querySelector(`li[data-key="${this.dataset.key}"]`);
     console.log(cartEdit);
     cartEdit.classList.add("cartItemEdit");
-    cartEdit.innerHTML = `<h1 class='cartItemRemove'>Remove?</h1> <span data-key='${this.dataset.key}' class='yes'>Yes</span> <span class='no'>No</span>`;
+    cartEdit.innerHTML = `<h1 class='cartItemRemove'>Remove?</h1> <span data-key='${this.dataset.key}' class='yes'>Yes</span> <span data-key='${this.dataset.key}' class='no'>No</span>`;
     let removeYes = document.querySelector(".yes"),
         removeNo = document.querySelector(".no");
     removeYes.addEventListener("click", removeCartItem);
@@ -96,11 +96,13 @@
   }
 
   function removeCartItem() {
-    console.log(`${this.dataset.key}`);
+      console.log("Removing item...");
   }
 
   function keepCartItem() {
-    console.log("keeping item...");
+    debugger;
+    let cartEdit = cartContainer.querySelector(`li[data-key="${this.dataset.key}"]`);
+    cartEdit.classList.remove("cartItemEdit");
   }
 
   addToCart.forEach(addButton => addButton.addEventListener("click", addItemToCart));

@@ -513,3 +513,72 @@ a {
 	0% {top: -1133px;}
 	100% {top: -643px;}
 }
+
+/* Contact Page */
+
+
+.myContactWrapper {
+	margin: 0 auto;
+	max-width: 400px;
+	display: grid;
+	grid-template-columns: 35px 60px 30px 60px 30px 60px 30px 60px 35px;
+	grid-template-rows: 60px auto 60px 90px;
+
+}
+
+.contactMessage {
+	padding-top: 1em;
+	line-height: 1.2em;
+	font-size: 2em;
+	max-width: 370px;
+	text-align: center;
+	color: #63AEAA;
+	text-shadow: 1px 1px 8px lightgrey;
+	margin: 0 auto;
+}
+
+.emailForm {
+	padding-top: 2em;
+}
+
+.emailForm label {
+	text-shadow: 1px 1px 8px lightgrey;
+	font-size: 2em;
+	color: #63AEAA;
+}
+
+.emailForm input {
+	padding-top: 0.2em;
+  border-radius: 0.5em;
+	line-height: 1em;
+	font-size: 1em;
+	border: 2px solid #63AEAA;
+	width: 250px;
+}
+
+.messageForm {
+  padding-top: 1.5em;
+	display: flex;
+	flex-direction: column;
+}
+
+.messageForm label {
+	text-shadow: 1px 1px 8px lightgrey;
+	font-size: 2em;
+	color: #63AEAA;
+}
+
+.messageForm textarea {
+	padding-top: 0.2em;
+	margin-top: 1em;
+	border-radius: 0.5em;
+	line-height: 1em;
+	font-size: 1.5em;
+	width: 330px;
+	height: 200px;
+  border: 2px solid #63AEAA;
+}
+
+#sendMessage {
+	
+}
