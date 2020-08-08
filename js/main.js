@@ -120,7 +120,6 @@
   }
 
   function galleryDown() {
-    console.log(window.innerWidth);
     if (window.innerWidth < 1200) {
       window.scrollBy({ top: 400, behavior: 'smooth' });
     }
