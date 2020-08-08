@@ -786,7 +786,7 @@ a {
 		max-width: 800px;
 		display: grid;
 		grid-template-columns: 35px 60px 30px 60px 30px 60px 30px 60px /**/ 30px /**/ 60px 30px 60px 30px 60px 30px 60px 35px;
-		grid-template-rows: 60px 50px auto 50px auto 50px auto 50px auto 50px auto 32px 60px 90px;
+		grid-template-rows: 60px 50px auto auto auto auto auto auto auto auto auto 30px 60px 90px;
     justify-content: center;
 	}
 
@@ -796,7 +796,28 @@ a {
 		background: none;
 		border: none;
 	}
-
+   
+	.galleryControls {
+		display: block;
+		width: 245px;
+	}
+	
+	.galleryControls button {
+    background: none;
+		border: none;
+		width: 50px;
+		margin-top: 1em;
+		margin-bottom: 1em;
+	 }
+	
+	.downArrow {
+		margin-left: 38px;
+	}
+	
+	.upArrow {
+		margin-left: 5px;
+	}
+	
 	.mainFooterGallery {
 		background-color: #63AEAA;
 		grid-column: 1/18;
@@ -831,7 +852,27 @@ a {
 	}
 
 	/* Gallery Items */
-
+  
+	#galleryControls1 {
+		grid-column: 8/11;
+		grid-row: 4/5;
+	}
+	
+	#galleryControls2 {
+		grid-column: 8/11;
+		grid-row: 6/7;
+	}
+	
+	#galleryControls3 {
+		grid-column: 8/11;
+		grid-row: 8/9;
+	}
+	
+	#galleryControls4 {
+		grid-column: 8/11;
+		grid-row: 10/11;
+	}
+	
 	.galleryDetails1 {
 		grid-column: 2/17;
 		grid-row: 3/4;
@@ -1220,6 +1261,10 @@ a {
 	.downArrow {
 		margin-left: 118px;
 	}
+	
+	.upArrow {
+		margin-left: 0px;
+	}
 
 	.returnTopGallery {
 		grid-column: 26/27;
@@ -1262,7 +1307,27 @@ a {
 	}
 
 	/* Gallery Items */
-
+  
+	#galleryControls1 {
+		grid-column: 12/17;
+		grid-row: 4/5;
+	}
+	
+	#galleryControls2 {
+		grid-column: 12/17;
+		grid-row: 6/7;
+	}
+	
+	#galleryControls3 {
+		grid-column: 12/17;
+		grid-row: 8/9;
+	}
+	
+	#galleryControls4 {
+		grid-column: 12/17;
+		grid-row: 10/11;
+	}
+	
 	.galleryDetails1 {
 		grid-column: 2/17;
 		grid-row: 3/4;
@@ -1271,11 +1336,6 @@ a {
 	.galleryImage1 {
 		grid-column: 2/17;
 		grid-row: 3/4;
-	}
-
-	#galleryControls1 {
-		grid-column: 12/17;
-		grid-row: 4/5;
 	}
 
 	.galleryDetails2 {
@@ -1287,11 +1347,6 @@ a {
 	  grid-column: 2/17;
 		grid-row: 5/6;
 	}
-  
-	#galleryControls2 {
-		grid-column: 12/17;
-		grid-row: 6/7;
-	}
 	
 	.galleryDetails3 {
 		grid-column: 2/17;
@@ -1302,11 +1357,6 @@ a {
 	 grid-column: 2/17;
 	 grid-row: 7/8;
 	}
-  
-	#galleryControls3 {
-		grid-column: 12/17;
-		grid-row: 8/9;
-	}
 	
 	.galleryDetails4 {
 		grid-column: 2/17;
@@ -1316,11 +1366,6 @@ a {
 	.galleryImage4 {
 	  grid-column: 2/17;
 		grid-row: 9/10;
-	}
-  
-	#galleryControls4 {
-		grid-column: 12/17;
-		grid-row: 10/11;
 	}
 	
 	.galleryDetails5 {

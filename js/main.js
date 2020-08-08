@@ -111,11 +111,22 @@
   }
 
   function galleryUp() {
-    window.scrollBy({ top: -750, behavior: 'smooth' });
+    if (window.width > 800) {
+      window.scrollBy({ top: -750, behavior: 'smooth' });
+    }
+    else {
+      window.scrollBy({ top: -750, behavior: 'smooth' });
+    }
   }
 
   function galleryDown() {
-    window.scrollBy({ top: 750, behavior: 'smooth' });
+    console.log(screen.width);
+    if (window.width > 800) {
+      window.scrollBy({ top: 750, behavior: 'smooth' });
+    }
+    else {
+      window.scrollBy({ top: 400, behavior: 'smooth' });
+    }
   }
 
   addToCart.forEach(addButton => addButton.addEventListener("click", addItemToCart));
