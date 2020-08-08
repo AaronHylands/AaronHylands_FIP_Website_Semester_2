@@ -13,8 +13,8 @@
       cartContainer = document.querySelector(".cartContainer"),
       addToCart = document.querySelectorAll(".addToCart"),
       checkoutButton = document.querySelector(".checkoutButton"),
-      downArrow = document.querySelectorAll(".downArrow"),
-      upArrow = document.querySelectorAll(".upArrow"),
+      downArrows = document.querySelectorAll(".downArrow"),
+      upArrows = document.querySelectorAll(".upArrow"),
       mainNav = document.querySelector("#mainNav");
 
   function toggleNav() {
@@ -110,6 +110,14 @@
 
   }
 
+  function galleryUp() {
+    window.scrollBy({ top: -750, behavior: 'smooth' });
+  }
+
+  function galleryDown() {
+    window.scrollBy({ top: 750, behavior: 'smooth' });
+  }
+
   addToCart.forEach(addButton => addButton.addEventListener("click", addItemToCart));
 
   burgerButton.addEventListener("click", toggleNav);
@@ -121,7 +129,7 @@
 
   galleryImages.forEach(galleryImage => galleryImage.addEventListener("click", animateImage));
   galleryDetails.forEach(galleryDetail => galleryDetail.addEventListener("click", animateImage));
-  
+
   storeItems.forEach(storeItem => storeItem.addEventListener("click", animateImage));
   storeDetails.forEach(storeDetail => storeDetail.addEventListener("click", animateImage));
 
@@ -130,6 +138,9 @@
 
   storeItems.forEach(storeItem => storeItem.addEventListener("animationend", flipImage));
   storeDetails.forEach(storeDetail => storeDetail.addEventListener("animationend", flipImage));
+
+  upArrows.forEach(upArrow => upArrow.addEventListener("click", galleryUp));
+  downArrows.forEach(downArrow => downArrow.addEventListener("click", galleryDown));
 
   checkoutButton.addEventListener("click", checkout);
   cartButton.addEventListener("click", toggleShoppingCart);
