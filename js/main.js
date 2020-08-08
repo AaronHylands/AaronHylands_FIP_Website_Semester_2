@@ -13,6 +13,8 @@
       cartContainer = document.querySelector(".cartContainer"),
       addToCart = document.querySelectorAll(".addToCart"),
       checkoutButton = document.querySelector(".checkoutButton"),
+      downArrow = document.querySelectorAll(".downArrow"),
+      upArrow = document.querySelectorAll(".upArrow"),
       mainNav = document.querySelector("#mainNav");
 
   function toggleNav() {
@@ -119,11 +121,13 @@
 
   galleryImages.forEach(galleryImage => galleryImage.addEventListener("click", animateImage));
   galleryDetails.forEach(galleryDetail => galleryDetail.addEventListener("click", animateImage));
+  
   storeItems.forEach(storeItem => storeItem.addEventListener("click", animateImage));
   storeDetails.forEach(storeDetail => storeDetail.addEventListener("click", animateImage));
 
   galleryImages.forEach(galleryImage => galleryImage.addEventListener("animationend", flipImage));
   galleryDetails.forEach(galleryDetail => galleryDetail.addEventListener("animationend", flipImage));
+
   storeItems.forEach(storeItem => storeItem.addEventListener("animationend", flipImage));
   storeDetails.forEach(storeDetail => storeDetail.addEventListener("animationend", flipImage));
 
