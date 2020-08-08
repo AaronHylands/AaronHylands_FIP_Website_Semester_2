@@ -111,7 +111,7 @@
   }
 
   function galleryUp() {
-    if (window.width > 800) {
+    if (window.innerWidth < 1200) {
       window.scrollBy({ top: -750, behavior: 'smooth' });
     }
     else {
@@ -120,12 +120,12 @@
   }
 
   function galleryDown() {
-    console.log(screen.width);
-    if (window.width > 800) {
-      window.scrollBy({ top: 750, behavior: 'smooth' });
+    console.log(window.innerWidth);
+    if (window.innerWidth < 1200) {
+      window.scrollBy({ top: 400, behavior: 'smooth' });
     }
     else {
-      window.scrollBy({ top: 400, behavior: 'smooth' });
+      window.scrollBy({ top: 750, behavior: 'smooth' });
     }
   }
 
