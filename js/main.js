@@ -82,6 +82,8 @@
     location.reload();
   }
 
+
+
   function cartItemFunction() {
     //console.log(`${this.dataset.key}`)
     let  cartEdit = document.querySelector(`li[data-key="${this.dataset.key}"]`);
@@ -96,13 +98,14 @@
   }
 
   function removeCartItem() {
-      console.log("Removing item...");
+    console.log("Removing item...");
+    let cartEdit = cartContainer.querySelector(`li[data-key="${this.dataset.key}"]`);
+    cartEdit.remove();
   }
 
   function keepCartItem() {
-    debugger;
-    let cartEdit = cartContainer.querySelector(`li[data-key="${this.dataset.key}"]`);
-    cartEdit.classList.remove("cartItemEdit");
+    console.log("Keeping item...");
+
   }
 
   addToCart.forEach(addButton => addButton.addEventListener("click", addItemToCart));
