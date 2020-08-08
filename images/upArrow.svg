@@ -1,0 +1,6 @@
+<svg id="upArrowLayer" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60">
+  <title>upArrow</title>
+  <g id="upArrowShape">
+    <path d="M24,9.55,5,42.55A6.9,6.9,0,0,0,11,52.9h38.1a6.9,6.9,0,0,0,6-10.35L36,9.55A6.89,6.89,0,0,0,24,9.55Z" style="fill: #63aeaa"/>
+  </g>
+</svg>
