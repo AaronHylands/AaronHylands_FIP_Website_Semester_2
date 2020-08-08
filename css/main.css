@@ -938,4 +938,16 @@ a {
 	}
 
 	/* Store Items End */
+	
+	/* Contact Page */
+
+
+	.myContactWrapper {
+		margin: 0 auto;
+		max-width: 800px;
+		display: grid;
+		grid-template-columns: 35px 60px 30px 60px 30px 60px 30px 60px /**/ 30px /**/ 60px 30px 60px 30px 60px 30px 60px 35px;
+		grid-template-rows: 60px auto 60px 90px;
+
+	}
 }
